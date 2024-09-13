@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #top{
+            margin: 40px 0 20px 40px;
+        }
+       #input_append{
+            width: 170px;
+            height: 20px;
+        }
+
+        #update{
+            height: 25px;
+            background-color: rgb(186, 192, 242);
+            border-color: aliceblue;
+            margin-left: 3px;
+        }
+
+        #delete{
+            height: 25px;
+            background-color: rgb(246, 183, 183);
+            border-color: rgb(255, 240, 240);
+            margin-left: 3px;
+        }
+
+        #div_append{
+            margin-left: 30px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <H1>Dynamic Web Page</h1>
+            <input type="text" id="input_append" placeholder="목록을 입력하시오">
+            <button id="update" onclick="listener_append()">추가</button>
+            <button id="delete" onclick="delete_all()">삭제</button>
+    </div>
+    
+    <ul id="div_append">
+
+    </ul>
+
+    <script>
+        function listener_append(){
+            let div_append = document.getElementById("div_append");
+            let input_append = document.getElementById("input_append").value;
+            let result = input_append.split(',');
+
+            if(input_append == ""|| input_append == "undefined"){
+                return false;
+            }
+        
+
+        result.forEach(function(item){
+            let li = document.createElement('li');
+            li.innerHTML = item.trim();
+            li.setAttribute('onclick', 'listener_remove(this)');
+            div_append.appendChild(li);
+        });
+
+        document.getElementById("input_append").value = "";
+        }
+
+        function listener_remove(obj){
+            obj.remove();
+        }
+
+        function delete_all(){
+            let div_append = document.getElementById("div_append");
+            div_append.innerHTML ="";
+        }
+    </script>
+</body>
+</html>

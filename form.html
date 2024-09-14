@@ -56,7 +56,7 @@
                 return false;
             }
         
-
+        
         result.forEach(function(item){
             let li = document.createElement('li');
             li.innerHTML = item.trim();
@@ -64,10 +64,13 @@
             div_append.appendChild(li);
         });
 
+        alert(result+"가 등록되었습니다.");
+
         document.getElementById("input_append").value = "";
         }
 
         function listener_remove(obj){
+            alert(obj.innerHTML+"가 삭제되었습니다.");
             obj.remove();
         }
 

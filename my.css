@@ -1,0 +1,25 @@
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px;
+        background-color: rgba(191, 246, 246, 0.742);
+    }
+    
+
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        font-size: 10px;
+        background-color: rgba(241, 140, 129, 0.742);
+    }
+
+    button {
+        font-size: 10px;
+        padding: 6px;
+    }
+}

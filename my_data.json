@@ -1,0 +1,96 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Kim Ji-hoon",
+      "age": 20,
+      "student_id": "22400421",
+      "major": "Computer Science"
+    },
+    {
+      "id": "2",
+      "name": "Lee Hye-jin",
+      "age": 21,
+      "student_id": "22300241",
+      "major": "Mechanical Engineering"
+    },
+    {
+      "id": "3",
+      "name": "Park Min-su",
+      "age": 22,
+      "student_id": "22200349",
+      "major": "Civil Engineering"
+    },
+    {
+      "id": "4",
+      "name": "Choi Soo-bin",
+      "age": 20,
+      "student_id": "22400109",
+      "major": "Physics"
+    },
+    {
+      "id": "5",
+      "name": "Yoon Seung-yeon",
+      "age": 20,
+      "student_id": "22400823",
+      "major": "Mathematics"
+    },
+    {
+      "id": "6",
+      "name": "Jung Da-eun",
+      "age": 23,
+      "student_id": "22100674",
+      "major": "Biology"
+    },
+    {
+      "id": "7",
+      "name": "Kang Dong-hyun",
+      "age": 22,
+      "student_id": "22200736",
+      "major": "Electrical Engineering"
+    },
+    {
+      "id": "8",
+      "name": "Han Ji-soo",
+      "age": 24,
+      "student_id": "22000273",
+      "major": "Chemistry"
+    },
+    {
+      "id": "9",
+      "name": "Song Ye-rin",
+      "age": 20,
+      "student_id": "22400492",
+      "major": "Environmental Science"
+    },
+    {
+      "id": "10",
+      "name": "Lim Joon-young",
+      "age": 24,
+      "student_id": "22000123",
+      "major": "Political Science"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "cname": "Open source studio",
+      "credit": 3
+    },
+    {
+      "id": "2",
+      "cname": "Programming studio",
+      "credit": 2
+    },
+    {
+      "id": "3",
+      "cname": "Discrete mathmetic",
+      "credit": 2
+    },
+    {
+      "id": "4",
+      "cname": "Computer architecture",
+      "credit": 3
+    }
+  ]
+}
